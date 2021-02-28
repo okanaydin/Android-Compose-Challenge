@@ -10,4 +10,14 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="explore_now">Explore Now</string>
+    <string name="adopt_now">Adopt Now</string>
+    <string name="adopt_puppy">Adopt Puppy</string>
+    <string name="your_favourite_soulmate_pet">your favourite soulmate pet</string>
+    <string name="age">Age</string>
+    <string name="color">Color</string>
+    <string name="sex">Sex</string>
+    <string name="weight">Weight</string>
+    <string name="lorem_text">Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="search_your_soulmate_pet">Search your soulmate pet</string>
 </resources>
