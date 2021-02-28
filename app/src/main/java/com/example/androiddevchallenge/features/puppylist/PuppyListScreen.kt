@@ -74,7 +74,7 @@ fun PuppyListScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(colorResource(id = R.color.white_100))
-                .padding(start = 24.dp, top = 16.dp, end = 24.dp, bottom = 16.dp)
+                .padding(start = 24.dp, top = 16.dp, end = 24.dp)
         ) {
             Row {
                 Text(
@@ -157,7 +157,11 @@ fun PuppyListScreen(
 @Composable
 fun PuppyList(onItemClicked: (index: Int) -> Unit) {
     Surface(color = colorResource(id = R.color.white_100)) {
-        LazyColumn(modifier = Modifier.clickable { onItemClicked }) {
+        LazyColumn(
+            modifier = Modifier
+                .padding(bottom = 16.dp)
+                .clickable { onItemClicked }
+        ) {
             itemsIndexed(puppyList) { index, puppy ->
                 PuppyListItem(puppy, index, onItemClicked)
             }
@@ -171,7 +175,7 @@ fun PuppyListItem(puppy: Puppy, index: Int, onItemClicked: (index: Int) -> Unit)
         backgroundColor = colorResource(id = R.color.white),
         shape = RoundedCornerShape(16.dp),
         modifier = Modifier.padding(
-            top = 16.dp,
+            top = 16.dp, start = 2.dp, end = 2.dp
         )
     ) {
 
@@ -336,9 +340,9 @@ fun PuppyListFilter(puppy: Puppy) {
         backgroundColor = colorResource(id = R.color.white),
         shape = RoundedCornerShape(16.dp),
         modifier = Modifier
-            .padding(end = 8.dp)
+            .padding(start = 4.dp, top = 2.dp, end = 4.dp, bottom = 2.dp)
             .width(75.dp)
-            .height(30.dp)
+            .height(30.dp),
     ) {
         Row(
             horizontalArrangement = Arrangement.Center,
